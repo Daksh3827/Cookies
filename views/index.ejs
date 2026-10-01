@@ -1,119 +1,184 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>CodeBlog</title>
-
   <link rel="stylesheet" href="/style.css" />
-
 </head>
 
 <body>
 
-  <nav class="top-nav">
+  <nav class="navbar">
 
+    <h2 class="brand-name">CodeBlog</h2>
 
-    <h2>CodeBlog</h2>
+    <div class="profile-area">
+      <span class="welcome-text">Welcome, <%= user %></span>
 
-    <div class="user-menu">
-
-
-      <span>Hi, <%= user %></span>
-
-      <a href="/logout">Logout</a>
-
+      <a href="/logout" class="logout-link">
+        Logout
+      </a>
     </div>
 
   </nav>
 
-  <main>
 
-    <section class="intro-section">
+  <main class="page-content">
 
-      <h1>
+    <section class="hero-section">
 
-        Learning, building
+      <span class="article-category">DEVELOPER JOURNEY</span>
 
+      <h1 class="hero-title">
+        Code. Create.
         <br />
-
-        and sharing code.
-
+        Keep Learning.
       </h1>
 
-      <p>
-
-        A simple developer blog where I share programming tips,
-
-        web development ideas, projects and coding experiences.
-
+      <p class="hero-description">
+        Welcome to my developer space where I share what I learn
+        about web development, programming, backend technologies,
+        projects and everything in between.
       </p>
 
     </section>
 
-    <section class="blog-container">
 
-      <article class="blog-card">
+    <section class="articles-section">
+      <article class="article-card">
 
-        <span>REACT JS</span>
+        <span class="article-category">
+          JAVASCRIPT
+        </span>
 
-        <h2>Getting Started With React Components</h2>
+        <h2 class="article-title">
+          JavaScript Concepts Every Beginner Should Know
+        </h2>
 
-        <p>
-
-          Learn how React components work and how they help
-
-          us create simple and reusable user interfaces.
-
+        <p class="article-description">
+          Explore variables, functions, arrays, objects,
+          promises and other important concepts that build
+          a strong JavaScript foundation.
         </p>
 
-        <a href="#">Read article →</a>
+        <a href="#" class="article-link">
+          Explore article →
+        </a>
+
+      </article>
+      <article class="article-card">
+
+        <span class="article-category">
+          REACT JS
+        </span>
+
+        <h2 class="article-title">
+          Building Modern Interfaces With React
+        </h2>
+
+        <p class="article-description">
+          Learn how components, props, state and hooks work
+          together to create interactive and reusable
+          React applications.
+        </p>
+
+        <a href="#" class="article-link">
+          Explore article →
+        </a>
+
+      </article>
+      <article class="article-card">
+
+        <span class="article-category">
+          BACKEND
+        </span>
+
+        <h2 class="article-title">
+          Creating APIs With Node.js & Express
+        </h2>
+
+        <p class="article-description">
+          Understand how backend applications work by
+          creating REST APIs, handling requests and
+          connecting applications with databases.
+        </p>
+
+        <a href="#" class="article-link">
+          Explore article →
+        </a>
+
+      </article>
+      <article class="article-card">
+
+        <span class="article-category">
+          DATABASE
+        </span>
+
+        <h2 class="article-title">
+          Getting Started With MongoDB
+        </h2>
+
+        <p class="article-description">
+          Learn about databases, collections, documents,
+          CRUD operations and how MongoDB can store
+          application data.
+        </p>
+
+        <a href="#" class="article-link">
+          Explore article →
+        </a>
+
+      </article>
+      <article class="article-card">
+
+        <span class="article-category">
+          PROJECTS
+        </span>
+
+        <h2 class="article-title">
+          From Ideas to Real Projects
+        </h2>
+
+        <p class="article-description">
+          Discover practical projects that combine
+          frontend, backend and database technologies
+          to solve real-world problems.
+        </p>
+
+        <a href="#" class="article-link">
+          View projects →
+        </a>
 
       </article>
 
-      <article class="blog-card">
 
-        <span>NODE JS</span>
+      <!-- Learning -->
+      <article class="article-card">
 
-        <h2>Building a Simple Express Server</h2>
+        <span class="article-category">
+          LEARNING
+        </span>
 
-        <p>
+        <h2 class="article-title">
+          Lessons From My Coding Journey
+        </h2>
 
-          Learn the basics of Node.js and Express by creating
-
-          a simple backend server and handling different routes.
-
+        <p class="article-description">
+          Notes, mistakes, useful resources and experiences
+          from continuously learning and building software
+          as a developer.
         </p>
 
-        <a href="#">Read article →</a>
+        <a href="#" class="article-link">
+          Read more →
+        </a>
 
       </article>
 
-      <article class="blog-card">
-
-        <span>MONGODB</span>
-
-        <h2>Understanding MongoDB Database</h2>
-
-        <p>
-
-          A beginner-friendly introduction to MongoDB,
-
-          collections, documents and storing application data.
-
-        </p>
-
-        <a href="#">Read article →</a>
-
-      </article>
 
     </section>
-
 
   </main>
 

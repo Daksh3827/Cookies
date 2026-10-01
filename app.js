@@ -10,8 +10,8 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 const LOGIN_USER = {
-  username: "harshit",
-  password: "123",
+  username: "Daksh",
+  password: "123456789",
 };
 
 function Home(req, res) {
