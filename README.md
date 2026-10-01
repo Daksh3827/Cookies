@@ -28,8 +28,8 @@ project-folder/
 ├── package.json
 │
 ├── public/
-│   └── style.css
+│   └── style.css        
 │
 └── views/
     ├── index.ejs
-    └── login.ejs
+    └── lo    gin.ejs
